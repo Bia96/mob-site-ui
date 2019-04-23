@@ -90,19 +90,15 @@ $button-font-size: 1rem;
 $button-border-width: 2px;
 $button-border-style: solid;
 $button-border-color: $button-background;
-$button-border-radius: 14px;
+$button-border-radius: 24px;
 $button-text-transform: uppercase;
 $button-letter-spacing: 2px;
-$button-shadow: 0 7px 16px 0 rgba(3, 102, 238, 0.45);
+$button-shadow: 5px 5px 16px 0 rgba(3, 102, 238, 0.45);
 
 // Accent button
 $accent-button-background: $accent-color;
 $accent-button-color: $font-color;
-$accent-button-shadow: 0 7px 16px 0 rgba(251, 255, 8, 0.452);
-
-// Secondary button
-$secondary-button-background: $secondary-color;
-$accent-button-color: $font-color;
+$accent-button-shadow: 5px 5px 16px 0 rgba(251, 255, 8, 0.452);
 
  
 // Muted Buttons

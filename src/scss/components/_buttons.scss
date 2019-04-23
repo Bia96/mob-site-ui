@@ -20,6 +20,8 @@
     cursor: pointer;
     text-decoration: none;
     line-height: 1;
+    min-height: 42px;
+    transition: 0.3s ease;
 }
 
 // Buttons on hover
@@ -28,6 +30,7 @@
     background: $button-background-hover;
     color: $button-color;
     text-decoration: none;
+    box-shadow: $button-shadow;
 }
 
 // Buttons on focus
@@ -63,11 +66,14 @@ a.accent-button {
     &:hover,
     &:focus,
     &:active {
-        color: $accent-button-color-hover;
+        color: $accent-button-color;
         border: 1px solid darken($accent-button-background, 10%);
         background: darken($accent-button-background, 10%);
+        box-shadow: $accent-button-shadow;
     }
 }
+
+
 
 // Muted buttons
 .muted-button,

@@ -1,12 +1,11 @@
 {
-  "name": "primitive-ui",
-  "author": "Tania Rascia",
-  "version": "1.5.0",
-  "description": "A minimalist Sass boilerplate that provides helpful, browser-consistent styling for default HTML elements - buttons, forms, tables, lists, and typography.",
+  "name": "mob-site-ui",
+  "author": "Beatriz",
+  "version": "1.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/taniarascia/primitive.git"
+    "url": "https://github.com/Bia96/mob-site-ui.git"
   },
   "keywords": [
     "sass",
@@ -24,9 +23,5 @@
     "sass": "node-sass ./src/scss/ -o ./dist/css/ -w -r --source-map-embed --source-map-contents --output-style expanded | node-sass ./src/scss/main.scss ./dist/css/main.min.css -w --output-style compressed"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/taniarascia/primitive/issues"
-  },
-  "homepage": "https://taniarascia.github.io/primitive",
   "private": false
 }

@@ -20,14 +20,15 @@ $desktop: $medium;
 /* Colors */
 
 $background: white; 
-$primary-color: #0366EE;
-$secondary-color: #29de7d; 
-$accent-color: #cdcdcd;
+$primary-color: #348fef;
+$secondary-color: #7ce6ff; 
+$accent-color: #eee03c;
+$accent-button-color-hover: darken($accent-color, 15%);
 $alternate-background: #fafafa;
-$alternate-color: #404040;
+$alternate-color: #031221;
 $link-color: $primary-color;
 $link-hover-color: darken($link-color, 15%);
-$highlight: #ffeea8;
+$highlight: #eec23c;
 $error: #D33C40;
 $bq-border: 16px solid #f0f0f0;
 
@@ -39,14 +40,14 @@ $body-font-size: 1rem;
 $font-style: normal;
 $font-variant: normal;
 $font-weight: normal;
-$font-color: #404040;
-$font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$font-color: #031221;
+$font-family: 'Open Sans', Arial, sans-serif;
 $line-height: 1.6;
 
 // Headings
-$heading-font-color: #404040;
-$heading-font-weight: 600;
-$heading-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$heading-font-color: #031221;
+$heading-font-weight: normal;
+$heading-font-family: 'Open Sans', Arial, sans-serif;
 $heading-line-height: 1.2;
 
 // Mobile heading font size
@@ -57,10 +58,10 @@ $h4-mobile: 1.1rem;
 $h5-mobile: 1rem;
 
 // Heading font size
-$h1: 2.25rem;
-$h2: 2rem;
-$h3: 1.75rem;
-$h4: 1.5rem;
+$h1: 3rem;
+$h2: 2.75rem;
+$h3: 2.25rem;
+$h4: 1.75rem;
 $h5: 1.25rem;
 
 /* Padding */
@@ -83,19 +84,26 @@ $borders: $border-width $border-style $border-color;
 $button-background: $primary-color;
 $button-background-hover: darken($button-background, 10%);
 $button-color: #ffffff;
-$button-font-weight: 600;
-$button-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$button-font-weight: 400;
+$button-font-family: 'Open Sans', Arial, sans-serif;
 $button-font-size: 1rem;
-$button-border-width: 1px;
+$button-border-width: 2px;
 $button-border-style: solid;
 $button-border-color: $button-background;
-$button-border-radius: $border-radius;
-$button-text-transform: none;
+$button-border-radius: 14px;
+$button-text-transform: uppercase;
+$button-letter-spacing: 2px;
+$button-shadow: 0 7px 16px 0 rgba(3, 102, 238, 0.45);
 
-// Accent buttons
-$accent-button-background: $secondary-color;
-$accent-button-color: #ffffff;
-$accent-button-color-hover: #ffffff;
+// Accent button
+$accent-button-background: $accent-color;
+$accent-button-color: $font-color;
+$accent-button-shadow: 0 7px 16px 0 rgba(251, 255, 8, 0.452);
+
+// Secondary button
+$secondary-button-background: $secondary-color;
+$accent-button-color: $font-color;
+
  
 // Muted Buttons
 $muted-border: 1px solid $accent-color;
@@ -113,7 +121,7 @@ $round-buttons: 40px;
 $forms: ('[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
 $buttons: ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
 $input-background: transparent;
-$placeholder: darken($accent-color, 20%);
+$placeholder: darken($font-color, 20%);
 $form-border: 1px solid $border-color;
 $form-border-hover: 1px solid darken($border-color, 10%);
 $form-border-focus: 1px solid $link-color; 

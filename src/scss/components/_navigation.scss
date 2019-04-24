@@ -1,2 +1,37 @@
 /* Navigation
   =============== */
+
+  .navbar {
+    background-color: $primary-color;
+    height: 60px;
+
+  .navbar-container {
+    justify-content: space-between;
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+  .navbar-button {
+    flex: 1;
+    min-width: 300px;
+    background-color: $primary-color;
+    font-size: $font-size;
+    color: lighten($primary-color, 25%);
+    font-weight: 500;
+    padding: 1rem;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+}
+
+@media screen and (min-width: 600px) {
+  nav a {
+    padding: 20px;
+    font-size: .9rem;
+  }
+}

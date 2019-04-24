@@ -1,0 +1,10 @@
+/* Index Specific Styles*/
+.container-hero {
+  height: calc(38.04348vw + 19.56522px);
+}
+
+.container-hero .text-container {
+  width: 45%;
+}
+
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAiZGlzdC9jc3MvYmFzZS9pbmRleC5jc3MiLAoJInNvdXJjZXMiOiBbCgkJInNyYy9zY3NzL2Jhc2UvaW5kZXguc2NzcyIKCV0sCgkic291cmNlc0NvbnRlbnQiOiBbCgkJIi8qIEluZGV4IFNwZWNpZmljIFN0eWxlcyovXHJcblxyXG4uY29udGFpbmVyLWhlcm8ge1xyXG4gICAgaGVpZ2h0OiBjYWxjKDM4LjA0MzQ4dncgKyAxOS41NjUyMnB4KTtcclxuXHJcbiAgICAudGV4dC1jb250YWluZXIge1xyXG4gICAgICAgIHdpZHRoOiA0NSU7XHJcbiAgICB9XHJcbn1cclxuXHJcbiIKCV0sCgkibmFtZXMiOiBbXSwKCSJtYXBwaW5ncyI6ICJBQUFBLDBCQUEwQjtBQUUxQixBQUFBLGVBQWUsQ0FBQztFQUNaLE1BQU0sRUFBRSw2QkFBNkI7Q0FLeEM7O0FBTkQsQUFHSSxlQUhXLENBR1gsZUFBZSxDQUFDO0VBQ1osS0FBSyxFQUFFLEdBQUc7Q0FDYiIKfQ== */

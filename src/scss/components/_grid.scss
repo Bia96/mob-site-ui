@@ -10,14 +10,8 @@ $margin-bottom: 1rem;
   padding-right: $column-padding;
 }
 
-%row-margin {
-  margin-left: -$column-padding;
-  margin-right: -$column-padding;
-}
-
 // Flex row
 .flex-row {
-  @extend %row-margin;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -25,7 +19,6 @@ $margin-bottom: 1rem;
 
 .flex-small,
 .flex-large {
-  @extend %column-padding;
   flex-basis: 100%;
   margin-bottom: $margin-bottom;
 }

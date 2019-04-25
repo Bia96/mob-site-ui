@@ -354,10 +354,6 @@ dd {
   padding-right: 1rem; }
 
 .flex-row {
-  margin-left: -1rem;
-  margin-right: -1rem; }
-
-.flex-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }

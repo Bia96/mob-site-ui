@@ -1,10 +1,58 @@
 /* Index Specific Styles*/
+.section-container {
+    @include small-breakpoint {
+        margin: .875rem;
+    }
+
+    @include medium-breakpoint {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    @include large-breakpoint {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
 
 .container-hero {
     height: calc(38.04348vw + 19.56522px);
 
     .text-container {
-        width: 45%;
+
+        @include medium-breakpoint {
+            width: 45%;
+        }
+
+        @media (max-width: #{$mobile}) {
+            justify-content: center;
+            
+            h1 {
+             text-align: center;
+            }
+          }
     }
 }
 
+// My Helpers //
+
+.flex-h {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-v {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+.mr-1 {
+    margin-right: .5rem;
+}

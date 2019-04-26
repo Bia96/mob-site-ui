@@ -34,25 +34,9 @@
     }
 }
 
-// My Helpers //
-
-.flex-h {
-    display: flex;
-    flex-direction: row;
+.cards-container {
+    justify-content: center;
 }
 
-.flex-v {
-    display: flex;
-    flex-direction: column;
-}
 
-.flex-wrap {
-    flex-wrap: wrap;
-}
 
-.mt-2 {
-    margin-top: 1rem;
-}
-.mr-1 {
-    margin-right: .5rem;
-}

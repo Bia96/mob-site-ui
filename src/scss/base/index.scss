@@ -1,13 +1,7 @@
 /* Index Specific Styles*/
 .section-container {
-    @include small-breakpoint {
-        margin: .875rem;
-    }
-
-    @include medium-breakpoint {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 
     @include large-breakpoint {
         margin-left: 3rem;
@@ -15,8 +9,10 @@
     }
 }
 
+// Hero //
+
 .container-hero {
-    height: calc(38.04348vw + 19.56522px);
+    height: calc(40vw + 25px);
 
     .text-container {
 
@@ -35,7 +31,15 @@
 }
 
 .cards-container {
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+
+    @include large-breakpoint {
+        flex-direction: row; 
+    }
 }
 
 

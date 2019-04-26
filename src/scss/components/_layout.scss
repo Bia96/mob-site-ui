@@ -34,27 +34,46 @@ hr {
 // Cards //
 
 .card {
-  width: calc(100vw - 75px);
-  box-shadow: 0 10px 18px 0 rgba(0,0,0,.03);
-  height: auto;
   background-color: #fff;
-  border-radius: 12px;
+  border-radius: 14px;
   box-sizing: border-box;
+  overflow: hidden;
 
-  .card-image {
-    height: calc(6.25vw + 130px);
+  &:hover {
+    text-decoration: none;
+  }
+
+  .card-content-title {
+    color: $primary-color;
+  }
+
+  .card-content-button {
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
   }
 
-  .card-content {
-    color: #868686;
-    padding: 1.5rem;
-  }
-  
-  &.product-card {
-    overflow: hidden;
+  &.card-product {
+    width: 100%;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,.03);
+    height: auto;
+    margin-bottom: 2rem;
+
+    @include large-breakpoint {
+      width: calc(30.33% - 15px);
+      margin-bottom: 0px;
+    }
+
+    .card-product__image {
+      height: calc(6.25vw + 130px);
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+
+    .card-product__content {
+      color: #868686;
+      padding: 1.5rem;
+
+    }
   }
 }

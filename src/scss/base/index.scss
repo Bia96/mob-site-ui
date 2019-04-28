@@ -1,12 +1,25 @@
 /* Index Specific Styles*/
+.bg-image {
+     background-image: url("/dist/images/landing-mobile.png");
+     background-repeat: no-repeat;
+     background-color: blue;
+
+     @include medium-breakpoint {
+         background-color: transparent;
+     }
+}
+
 .section-container {
     margin-left: 2rem;
     margin-right: 2rem;
-    
+
     @include large-breakpoint {
         margin-left: 8rem;
         margin-right: 8rem;
-        height: calc(100vh + 96px); 
+
+        &.hero {
+            height: calc(100vh + 96px); 
+        }
     }
 }
 
@@ -14,9 +27,13 @@
 
 .container-hero {
     height: calc(70vh - 60px);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
 
     @include medium-breakpoint {
         height: calc(100vh - 60px);  
+        align-items: center;
     }
 
     .text-container {
@@ -31,6 +48,16 @@
     }
 }
 
+img.landing-image-lg {
+    max-height: 560px;
+    margin-left: 5rem;
+    display: none;
+
+    @include medium-breakpoint {
+        display: block;
+    }
+}
+
 .cards-container {
     justify-content: space-between;
     flex-wrap: wrap;
@@ -38,9 +65,53 @@
     display: flex;
     flex-direction: column;
 
-    @include large-breakpoint {
+    @include medium-breakpoint {
         flex-direction: row;
     }
+}
+
+// Seção parceiros //
+
+.partner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include medium-breakpoint {
+        flex-direction: row;
+        margin-bottom: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .partner-icon-box {
+        overflow: hidden;
+        padding: 24px;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include medium-breakpoint {
+            padding: 24px;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                box-shadow: 0 8px 12px 0 rgba(0,0,0,.03);
+            }
+
+            .partner-icon {
+                height: auto;
+            }
+        }
+
+}
 }
 
 

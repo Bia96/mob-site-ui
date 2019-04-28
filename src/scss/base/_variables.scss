@@ -20,12 +20,12 @@ $desktop: $medium;
 /* Colors */
 
 $background: white; 
-$primary-color: #348fef;
+$primary-color: #0e6bce;
 $secondary-color: #7ce6ff; 
 $accent-color: #eee03c;
 $accent-button-color-hover: darken($accent-color, 15%);
 $alternate-background: #fafafa;
-$alternate-color: #031221;
+$alternate-color: #24272b;
 $link-color: $primary-color;
 $link-hover-color: darken($link-color, 15%);
 $highlight: #eee03c;
@@ -40,12 +40,12 @@ $body-font-size: 1rem;
 $font-style: normal;
 $font-variant: normal;
 $font-weight: normal;
-$font-color: #031221;
+$font-color: #50555a;
 $font-family: 'Open Sans', Arial, sans-serif;
 $line-height: 1.6;
 
 // Headings
-$heading-font-color: $font-color;
+$heading-font-color: #334052;
 $heading-font-weight: normal;
 $heading-font-family: 'Open Sans', Arial, sans-serif;
 $heading-line-height: 1.2;
@@ -97,13 +97,13 @@ $button-shadow: 5px 5px 16px 0 rgba(3, 102, 238, 0.45);
 
 // Accent button
 $accent-button-background: $accent-color;
-$accent-button-color: $font-color;
+$accent-button-color: $alternate-color;
 $accent-button-shadow: 5px 5px 16px 0 rgba(251, 255, 8, 0.452);
 
  
 // Muted Buttons
 $muted-border: 2px solid $primary-color;
-$muted-border-hover: 2px solid darken($primary-color, 30%);
+$muted-border-hover: 2px solid $primary-color;
 $muted-background: transparent;
 $muted-background-hover: transparent;
 $muted-color: $primary-color;

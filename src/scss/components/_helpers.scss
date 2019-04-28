@@ -108,7 +108,7 @@
 }
 
 .margin-bottom {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 
@@ -130,6 +130,16 @@
     margin-right: 1.5rem;
   }
 
+// Width
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
 // Backgrounds
 .alternate-background {
     background: $alternate-background;
@@ -148,8 +158,9 @@
 // Animation //
 .ani-grow { 
     transition: all .3s ease-in-out; 
+
+    &:hover { 
+        transform: scale(1.05); 
+    }
 }
 
-.ani-grow:hover { 
-    transform: scale(1.1); 
-}

@@ -1,32 +1,33 @@
 /* Index Specific Styles*/
 .section-container {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
     @include large-breakpoint {
-        margin-left: 3rem;
-        margin-right: 3rem;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        height: calc(100vh + 96px); 
     }
 }
 
 // Hero //
 
 .container-hero {
-    height: calc(40vw + 25px);
+    height: calc(70vh - 60px);
+
+    @include medium-breakpoint {
+        height: calc(100vh - 60px);  
+    }
 
     .text-container {
+        width: 100%;
+        margin-top: 5vh;
 
         @include medium-breakpoint {
             width: 45%;
+            margin-top: auto;
+            margin-bottom: auto;
         }
-
-        @media (max-width: #{$mobile}) {
-            justify-content: center;
-            
-            h1 {
-             text-align: center;
-            }
-          }
     }
 }
 
@@ -38,7 +39,7 @@
     flex-direction: column;
 
     @include large-breakpoint {
-        flex-direction: row; 
+        flex-direction: row;
     }
 }
 

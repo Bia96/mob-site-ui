@@ -17,6 +17,11 @@ $margin-bottom: 1rem;
   flex-wrap: wrap;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex-small,
 .flex-large {
   flex-basis: 100%;

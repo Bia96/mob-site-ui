@@ -41,7 +41,7 @@ hr {
 
   &:hover {
     text-decoration: none;
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,.03);
+    box-shadow: 6px 6px 17px 0px rgba(194,194,194,1);
   }
 
   .card-content-title {
@@ -59,7 +59,7 @@ hr {
     margin-bottom: 2rem;
 
     @include large-breakpoint {
-      width: calc(30.33% - 15px);
+      width: calc(33.33% - 15px);
       margin-bottom: 0px;
     }
 

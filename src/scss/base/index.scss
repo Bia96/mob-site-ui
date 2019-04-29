@@ -1,11 +1,19 @@
 /* Index Specific Styles*/
+
 .bg-image {
-     background-image: url("/dist/images/landing-mobile.png");
+     height: 100%;
+     width: 100%;
      background-repeat: no-repeat;
-     background-color: blue;
+     background-position: center 20%;
+     background-size: cover;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     overflow: hidden;
 
      @include medium-breakpoint {
-         background-color: transparent;
+         display: none;
      }
 }
 
@@ -40,10 +48,22 @@
         width: 100%;
         margin-top: 5vh;
 
+        p, h1 {
+        color: #fff;
+    }
+
         @include medium-breakpoint {
             width: 45%;
             margin-top: auto;
             margin-bottom: auto;
+
+            h1 {
+                color: $heading-font-color;
+            }
+
+            p {
+                color: $font-color;
+            }
         }
     }
 }

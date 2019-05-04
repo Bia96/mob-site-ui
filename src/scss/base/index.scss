@@ -17,6 +17,53 @@
      }
 }
 
+.bg-tile {
+    max-width: 600px;
+    margin: 90px 0 0 20px;
+    position: absolute;
+    z-index: -2;
+    opacity: 0.5;
+    display: none;
+    
+    .slide-in-left {
+        -webkit-animation: slide-in-left 0.5s ease-in-out 0.8s both;
+        animation: slide-in-left 0.5s ease-in-out 0.8s both;
+    }
+
+
+@-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+    @include medium-breakpoint {
+        display: block;
+        -webkit-animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+}
+
 .img-overlay {
     height: 100%;
     width: 100%;
@@ -86,13 +133,43 @@
 }
 
 img.landing-image-lg {
-    max-height: 560px;
-    margin-left: 5rem;
+    max-height: 585px;
+    margin-left: 4rem;
+    width: 120%;
+    height: 100%;
     display: none;
+-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
+     animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
 
     @include medium-breakpoint {
         display: block;
     }
+
+@-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
 }
 
 .cards-container {

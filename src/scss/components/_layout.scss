@@ -55,12 +55,15 @@ hr {
   &.card-product {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 2rem;
 
     @include large-breakpoint {
       width: calc(33.33% - 15px);
       margin-bottom: 0px;
+      transition: 0.3s ease-in-out;
     }
 
     .card-product__image {
@@ -69,6 +72,10 @@ hr {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 50%;
+      display: flex;  
+     justify-content: center;
+      padding: 1rem;
+
     }
 
     .card-product__content {

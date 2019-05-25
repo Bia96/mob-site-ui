@@ -5,6 +5,6 @@ function randombg(){
     var bigSize = ["url('dist/images/bg-01.png')",
                    "url('dist/images/bg-02.png')",];
     document.getElementById("random").style.backgroundImage=bigSize[random];
-    console.log
+    console.log(bigSize)
   }
 

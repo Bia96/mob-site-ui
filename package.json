@@ -19,6 +19,7 @@
     "node-sass": "^4.11.0"
   },
   "scripts": {
+    "dev": "http-server",
     "sass-docs": "node-sass -w -r ./src/scss/ -o ./docs/css/",
     "sass": "node-sass ./src/scss/ -o ./dist/css/ -w -r --source-map-embed --source-map-contents --output-style expanded | node-sass ./src/scss/main.scss ./dist/css/main.min.css -w --output-style compressed"
   },

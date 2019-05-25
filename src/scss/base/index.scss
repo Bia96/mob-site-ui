@@ -90,7 +90,13 @@
     }
 }
 
-.illustration, 
+.illustration {
+    display: none;
+
+    @include medium-breakpoint {
+        display: flex;
+    }
+} 
 
 img.landing-image-lg {
     width: 120%;

@@ -19,7 +19,6 @@
                 <a href="#!" class="brand">Brand</a>
             </div>
             <div class="inline-block float-right">
-                <a class="navbar-button" href="#!">Sobre a Mob</a>
                 <a class="navbar-button" href="#!">Nosso E-book</a>
             </div>
         </div>
@@ -28,12 +27,17 @@
     <section class="landing" id="Olá, somos a Mob">
             <div class="w-100 bg-image" id="random"></div>
             <div class="img-overlay"></div>
-                <div class="section-container hero container-hero flex-row">
+                <div class="section-container container-hero flex-row">
                     <div class="text-container flex-column">
-                        <h1>Olá, somos a Mob.</h1>
+                        <h1 class="">Olá, somos a Mob.</h1>
                         <p>Se você tem um produto que atenda pessoas com deficiência, mobilidade reduzida ou idosos e 
                         precisa da conexão com a indústria, venha mobilizar conosco!</p>
-                        <button class="flex-large mt-3 w-100">Quero saber mais</button>
+                        <form class="flex-v" name="Saber Mais" netlify>
+                            <label class="flex-small" for="Seu Email">Email
+                                 <input type="email" id="Seu Email">
+                            </label>
+                            <input type="submit" class="flex-large mt-3 w-100" value="Quero saber mais"></input>
+                        </form>
                     </div>
         </div>
     </section>
@@ -44,19 +48,6 @@
             <p class="text-center margin-bottom">Atualmente, a Mob tem investido seus esforços em 3 pilares, 
                 com o intuito de fomentar as discussões a respeito da Acessibilidade e Inclusão.</p>
             <div class="cards-container margin-top margin-bottom">
-                <div class="card card-product">
-                    <a href="">
-                        <div class="card-product__image">
-                            <img src="images/icone-industria.svg" alt="Ilustração de uma Indústria" class="responsive-image icon-image">
-                        </div>
-                        <div class="card-product__content">
-                            <h5 class="card-content-title no-margin-top">Conexão Inventor/Indústria</h5>
-                            <p class="card-content-text">Para inventores individuais com produtos de Tecnologia Assistiva, oferecemos a conexão com a Indústria, além de consultorias 
-                                sobre o que é necessário para adquirir seus primeiros investidores ou escoar o produto para o mercado.</p>
-                            <button class="card-content-button muted-button">Cadastrar</button>
-                        </div>
-                    </a>
-                </div>
 
                 <div class="card card-product flex-v">
                     <a href="">
@@ -71,6 +62,20 @@
                         </div>
                     </a>
                 </div>
+
+                <div class="card card-product">
+
+                    <div class="card-product__image">
+                        <img src="images/icone-industria.svg" alt="Ilustração de uma Indústria" class="responsive-image icon-image">
+                    </div>
+                    <div class="card-product__content">
+                        <h5 class="card-content-title no-margin-top">Conexão Inventor/Indústria</h5>
+                        <p class="card-content-text">Para inventores individuais com produtos de Tecnologia Assistiva, oferecemos a conexão com a Indústria, além de consultorias 
+                            sobre o que é necessário para adquirir seus primeiros investidores ou escoar o produto para o mercado.</p>
+                        <button onclick="window.location.href = 'https://forms.gle/Nejfww5qaj2pbZM96';" class="card-content-button muted-button">Cadastrar</button>
+                    </div>
+
+            </div>
 
                 <div class="card card-product flex-v">
                     <a href="">
@@ -114,23 +119,15 @@
     </section>
 
     <section class="call-to-action w-75 mx-auto margin-bottom margin-top" id="Receber Prévia do Nosso Ebook">
-        <!--<div class="w-100 bg-image" style="background-image: url(images/landing-mobile.png); max-height: 70vh;"></div>-->
-            <div class="section-container margin-top margin-bottom flex-row">
-                <div class="text-container flex-column">
-                    <h1 class="text-center">Ebook: O que falta pro meu produto ganhar o mercado?</h1>
-                    <p class="text-center margin-top">Passo a Passo, planilhas e dicas valiosas sobre os assuntos que os inventores mais 
+            <div class="margin-bottom margin-top margin-bottom flex-row">
+                <div class="text-container flex-column flex-item--1 mr-4">
+                    <h1>Ebook: O que falta pro meu produto ganhar o mercado?</h1>
+                    <p class="margin-top">Passo a Passo, planilhas e dicas valiosas sobre os assuntos que os inventores mais 
                         possuem dúvidas. E melhor: você só compra o módulo que precisar.</p>
-                    <form class="flex-v" name="Receber Prévia do E-book" netlify>
-                        <div class="flex-h">
-                            <label class="flex-small mr-1" for="Nome">Nome
-                                <input type="text" id="Nome">
-                            </label>
-                            <label class="flex-small" for="Seu Email">Email
-                                <input type="email" id="Seu Email">
-                            </label>
-                        </div>
-                        <input type="submit" class="accent-button flex-large mt-3 w-100" value="Quero Receber"></input>
-                    </form>
+                    <button class="accent-button flex-large mt-3 w-100">Quero conhecer</button>
+                </div>
+                <div class="flex-item--1">
+                    <img class="landing-image-lg" src="images/landing.svg" alt="Ilustração de Lorem Ipsum">
                 </div>
     </div>
 </section>
@@ -146,9 +143,7 @@
                 precisa da conexão com a indústria, venha mobilizar conosco!</p>
                 <button class="flex-large mt-3 w-100">Quero saber mais</button>
             </div>
-            <div class="illustration flex-small">
-                <img class="landing-image-lg" src="images/landing.svg" alt="Ilustração de Lorem Ipsum">
-            </div>
+
 </div>
 </section>-->
 

@@ -2,20 +2,25 @@
 
 .bg-image {
      height: 100%;
-     width: 100%;
      background-repeat: no-repeat;
-     background-position: center 20%;
      background-size: cover;
      position: absolute;
+     background-position: center center;
      top: 0;
      left: 0;
      z-index: -2;
      overflow: hidden;
+     max-height: 70vh;
 
      @include medium-breakpoint {
-         display: none;
+         max-height: none;
      }
-}
+    }
+
+    #random{
+        width: 100%;
+        background-image: url('../../dist/images/bg-03.jpg');
+      }
 
 .bg-tile {
     max-width: 600px;
@@ -75,9 +80,11 @@
     overflow: hidden;
     background-color: #334052; 
     opacity: 0.7;
+    max-height: 70vh;
+    
 
     @include medium-breakpoint {
-        display: none;
+        max-height: none;
     }
 }
 

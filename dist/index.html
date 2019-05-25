@@ -1,5 +1,4 @@
 <!doctype html>
-<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -10,9 +9,10 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="images/favicon.png">
+    <script src="../dist/js/script.js"></script>
 </head>
 
-<body>
+<body onload="randombg()">
     <nav class="navbar">
         <div class="container navbar-container">
             <div class="inline-block float-left">
@@ -25,22 +25,18 @@
         </div>
     </nav>
 
-    <section class="landing" id="Apresentação">
-        <img src="images/tile2.svg" class="bg-tile">
-        <div class="w-100 bg-image" style="background-image: url(images/landing-mobile.png); max-height: 70vh;"></div>
-        <div class="img-overlay" style="max-height: 70vh;"></div>
-            <div class="section-container hero container-hero flex-row">
-                <div class="text-container flex-column">
-                    <h1>Olá, somos a Mob.</h1>
-                    <p>Se você tem um produto que atenda pessoas com deficiência, mobilidade reduzida ou idosos e 
-                    precisa da conexão com a indústria, venha mobilizar conosco!</p>
-                    <button class="flex-large mt-3 w-100">Quero saber mais</button>
-                </div>
-                <div class="illustration flex-small">
-                    <img class="landing-image-lg" src="images/landing.svg" alt="Ilustração de Lorem Ipsum">
-                </div>
-    </div>
-</section>
+    <section class="landing" id="Olá, somos a Mob">
+            <div class="w-100 bg-image" id="random"></div>
+            <div class="img-overlay"></div>
+                <div class="section-container hero container-hero flex-row">
+                    <div class="text-container flex-column">
+                        <h1>Olá, somos a Mob.</h1>
+                        <p>Se você tem um produto que atenda pessoas com deficiência, mobilidade reduzida ou idosos e 
+                        precisa da conexão com a indústria, venha mobilizar conosco!</p>
+                        <button class="flex-large mt-3 w-100">Quero saber mais</button>
+                    </div>
+        </div>
+    </section>
 
     <section class="product-cards" id="Nossos Pilares">
         <div class="section-container margin-top">
@@ -138,6 +134,23 @@
                 </div>
     </div>
 </section>
+
+<!--<section class="landing-e" id="E-book">
+    <img src="images/tile2.svg" class="bg-tile">
+    <div class="w-100 bg-image" style="background-image: url(images/landing-mobile.png); max-height: 70vh;"></div>
+    <div class="img-overlay" style="max-height: 70vh;"></div>
+        <div class="section-container hero container-hero flex-row">
+            <div class="text-container flex-column">
+                <h1>Olá, somos a Mob.</h1>
+                <p>Se você tem um produto que atenda pessoas com deficiência, mobilidade reduzida ou idosos e 
+                precisa da conexão com a indústria, venha mobilizar conosco!</p>
+                <button class="flex-large mt-3 w-100">Quero saber mais</button>
+            </div>
+            <div class="illustration flex-small">
+                <img class="landing-image-lg" src="images/landing.svg" alt="Ilustração de Lorem Ipsum">
+            </div>
+</div>
+</section>-->
 
 <footer class="footer margin-top flex-row">
     <div class="footer-left-content">

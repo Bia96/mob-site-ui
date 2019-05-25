@@ -11,6 +11,7 @@
      z-index: -2;
      overflow: hidden;
      max-height: 70vh;
+     background-image: url('../../dist/images/bg-03.png');
 
      @include medium-breakpoint {
          max-height: none;
@@ -19,7 +20,7 @@
 
     #random{
         width: 100%;
-        background-image: url('../../dist/images/bg-03.png');
+        
       }
 
 

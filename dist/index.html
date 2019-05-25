@@ -13,10 +13,11 @@
     <script>
     
         function randombg(){
-            var random= Math.floor((Math.random() * 2) + 1);
-            var bigSize = ["url('dist/images/bg-01.png')",
-                           "url('dist/images/bg-02.png')",];
-            document.getElementById("random").style.backgroundImage=bigSize[random];
+            var random= Math.floor((Math.random() * 3));
+            var bigSize = ["url('images/bg-03.png'), url('images/bg-01.png'), url('images/bg-02.png')"];
+            document.getElementById("random").style.backgroundImage = bigSize[random];
+            console.log(bigSize)
+            console.log(random)
           }
         </script>
 </head>

@@ -13,7 +13,7 @@
     <script>
         function randombg(){
             var random= Math.floor((Math.random() * 3));
-            var bigSize = ["url('images/bg-01.png'), url('images/bg-02.png'), url('images/bg-03.png')"];
+            var bigSize = ["url('images/bg-01.png')", "url('images/bg-02.png')", "url('images/bg-03.png')"];
             document.getElementById("random").style.backgroundImage = "";
             document.getElementById("random").style.backgroundImage = bigSize[random];
             console.log(bigSize)

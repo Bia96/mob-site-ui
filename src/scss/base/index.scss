@@ -2,7 +2,11 @@
 
 .brand {
     width: 100%;
-    padding: 0;
+    padding-left: 1rem;
+
+    @include medium-breakpoint {
+        padding: 0;
+    }
 
     .brand-svg {
         width: 10vh;
@@ -21,6 +25,7 @@
      z-index: -2;
      overflow: hidden;
      max-height: 70vh;
+     transition: 0.3s ease-in;
 
      @include medium-breakpoint {
          max-height: none;

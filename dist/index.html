@@ -14,7 +14,7 @@
     
         function randombg(){
             var random= Math.floor((Math.random() * 3));
-            var bigSize = ["url('images/bg-03.png'), url('images/bg-01.png'), url('images/bg-02.png')"];
+            var bigSize = ["url('images/bg-01.png'), url('images/bg-02.png'), url('images/bg-03.png')"];
             document.getElementById("random").style.backgroundImage = bigSize[random];
             console.log(bigSize)
             console.log(random)
@@ -35,7 +35,8 @@
     </nav>
 
     <section class="landing" aria-label="Olá, somos a Mob">
-            <div class="w-100 bg-image" id="random"></div>
+            <div class="w-100 bg-image" id="random" alt="Imagens que refletem as atividades da Mob: Trabalhador uniformizado realizando atividades na indústria; Mulher jovem, cadeirante, 
+            pratica esporte; Membros do time da Mob apresentam trabalho em feira."></div>
             <div class="img-overlay"></div>
                 <div class="section-container container-hero flex-row">
                     <div class="text-container flex-column">

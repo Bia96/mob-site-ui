@@ -5,19 +5,26 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Mob</title>
+    <title>Mob Design Assistivo</title>
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#707070">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Mob Design Assistivo">
+    <meta name="application-name" content="Mob Design Assistivo">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
     <script>
         function randombg(){
             var random= Math.floor((Math.random() * 3));
-            var bigSize = ["url('images/bg-01.png')", "url('images/bg-02.png')", "url('images/bg-03.png')"];
-            document.getElementById("random").style.backgroundImage = "";
+            var bigSize = ["url('images/time-mob-Shell-Iniciativa-Jovem.png')", "url('images/Trabalhador-Industria-Solda.jpg')", "url('images/Garota-Cadeirante-Praticando-Esportes.png')"];
             document.getElementById("random").style.backgroundImage = bigSize[random];
-            console.log(bigSize)
-            console.log(random)
           }
     </script>
 </head>
@@ -25,8 +32,10 @@
 <body onload="randombg()">
     <nav class="navbar">
         <div class="container navbar-container">
-            <div class="inline-block float-left">
-                <a href="#!" class="brand">Brand</a>
+            <div class="inline-block float-left mt-3">
+                <a href="index.html" class="brand">
+                    <img src="images/mob-design-assistivo.svg" alt="Mob Design Assistivo" class="brand-svg">
+                </a>
             </div>
             <div class="inline-block float-right">
                 <a class="navbar-button" href="#!">Nosso E-book</a>

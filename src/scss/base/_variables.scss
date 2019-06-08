@@ -43,6 +43,7 @@ $font-weight: normal;
 $font-color: #50555a;
 $font-family: 'Open Sans', Arial, sans-serif;
 $line-height: 1.6;
+$font-size-small: 0.875rem;
 
 // Headings
 $heading-font-color: #334052;
@@ -99,6 +100,12 @@ $button-shadow: 5px 5px 16px 0 rgba(3, 102, 238, 0.45);
 $accent-button-background: $accent-color;
 $accent-button-color: $alternate-color;
 $accent-button-shadow: 5px 5px 16px 0 rgba(251, 255, 8, 0.452);
+
+// Shadows
+
+$shadow-1: 0 2px 4px rgba(0, 0, 0, 0.07);
+$shadow-2: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+$shadow-3: 0 2px 4px 0 rgba(0, 0, 0, 0.40);
 
  
 // Muted Buttons

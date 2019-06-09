@@ -158,6 +158,18 @@ img.landing-image-lg {
     @include medium-breakpoint {
         flex-direction: row;
     }
+
+    .card-tall {
+        width: 100%;
+
+        @include medium-breakpoint {
+          width: 30%;
+        }
+
+        .card-content{
+            height: 100%;
+        }
+    }
 }
 
 // Seção parceiros //

@@ -30,7 +30,6 @@
     background: $button-background-hover;
     color: $button-color;
     text-decoration: none;
-    box-shadow: $button-shadow;
 }
 
 // Buttons on focus
@@ -84,7 +83,7 @@ a.muted-button {
     &:hover,
     &:focus,
     &:active {
-        color: $muted-color;
+        color: $muted-color-hover;
         border: $muted-border-hover;
         background: $muted-background-hover;
     }

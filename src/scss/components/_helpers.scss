@@ -173,15 +173,6 @@
     overflow: hidden;
 }
 
-// Animation //
-.ani-grow { 
-    transition: all .3s ease-in-out; 
-
-    &:hover { 
-        transform: scale(1.05); 
-    }
-}
-
 // Flex //
 
 .flex-row-reverse {

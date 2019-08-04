@@ -1,5 +1,19 @@
 /* Index Specific Styles*/
 
+.brand {
+    width: 100%;
+    padding-left: 1rem;
+
+    @include medium-breakpoint {
+        padding: 0;
+    }
+
+    .brand-svg {
+        width: 10vh;
+    }
+
+}
+
 .bg-image {
      height: 100%;
      background-repeat: no-repeat;
@@ -11,6 +25,7 @@
      z-index: -2;
      overflow: hidden;
      max-height: 70vh;
+     transition: 0.3s ease-in;
 
      @include medium-breakpoint {
          max-height: none;
@@ -136,13 +151,24 @@ img.landing-image-lg {
 
 .cards-container {
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: stretch;
     display: flex;
     flex-direction: column;
 
     @include medium-breakpoint {
         flex-direction: row;
+    }
+
+    .card-tall {
+        width: 100%;
+
+        @include medium-breakpoint {
+          width: 30%;
+        }
+
+        .card-content{
+            height: 100%;
+        }
     }
 }
 

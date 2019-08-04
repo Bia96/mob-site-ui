@@ -5,18 +5,37 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Mob</title>
+    <title>Mob Design Assistivo</title>
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#707070">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Mob Design Assistivo">
+    <meta name="application-name" content="Mob Design Assistivo">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
+    <script>
+        function randombg(){
+            var random= Math.floor((Math.random() * 3));
+            var bigSize = ["url('images/time-mob-Shell-Iniciativa-Jovem.png')", "url('images/Trabalhador-Industria-Solda.jpg')", "url('images/Garota-Cadeirante-Praticando-Esportes.png')"];
+            document.getElementById("random").style.backgroundImage = bigSize[random];
+          }
+    </script>
 </head>
 
 <body onload="randombg()">
     <nav class="navbar">
         <div class="container navbar-container">
-            <div class="inline-block float-left">
-                <a href="#!" class="brand">Brand</a>
+            <div class="inline-block float-left mt-3">
+                <a href="index.html" class="brand">
+                    <img src="images/mob-design-assistivo.svg" alt="Mob Design Assistivo" class="brand-svg">
+                </a>
             </div>
             <div class="inline-block float-right">
                 <a class="navbar-button" href="#!">Nosso E-book</a>
@@ -25,7 +44,7 @@
     </nav>
 
     <section class="landing" aria-label="Olá, somos a Mob">
-            <div class="w-100 bg-image" id="random"></div>
+            <div class="w-100 bg-image" id="random" alt=""></div>
             <div class="img-overlay"></div>
                 <div class="section-container container-hero flex-row">
                     <div class="text-container flex-column">
@@ -48,48 +67,45 @@
             <p class="text-center margin-bottom">Atualmente, a Mob investe em três pilares,
                  buscando aumentar a discussão sobre acessibilidade e inclusão na sociedade.</p>
             <div class="cards-container margin-top margin-bottom">
-
-                <div class="card card-product flex-v">
-                    <a href="">
-                        <div class="card-product__image">
-                            <img src="images/icone-conhecimento.svg" alt="Ilustração de um Alto Falante e balão de fala" class="responsive-image icon-image">
+                <div class="card card-tall">
+                        <div class="card-content-image flex-v margin-bottom">
+                            <img src="images/icone-conhecimento.svg" alt="" class="icon-image">
                         </div>
-                        <div class="card-product__content">
+                        <div class="card-content">
                             <h5 class="card-content-title no-margin-top">Workshops e Oficinas</h5>
                             <p class="card-content-text">Aprenda sobre como aplicar os princípios do Design Universal, 
                                 Design Inclusivo e Acessibilidade em seus projetos.</p>
                             <button class="card-content-button muted-button">Entrar em Contato</button>
                         </div>
-                    </a>
                 </div>
 
-                <div class="card card-product">
-
-                    <div class="card-product__image">
-                        <img src="images/icone-industria.svg" alt="Ilustração de uma Indústria" class="responsive-image icon-image">
+            <div class="card card-tall">
+                <div class="card-content">
+                    <div class="card-content-image flex-v margin-bottom">
+                        <img src="images/icone-industria.svg" alt="" class="icon-image">
                     </div>
-                    <div class="card-product__content">
+                    <div class="card-content">
                         <h5 class="card-content-title no-margin-top">Conexão Inventor/Indústria</h5>
                         <p class="card-content-text">Possui algum produto de Tecnologia Assistiva? Nós oferecemos conexão com a Indústria e consultoria. 
                             Descubra o que é necessário para lançar seu produto no mercado.</p>
                         <button onclick="window.location.href = 'https://forms.gle/Nejfww5qaj2pbZM96';" class="card-content-button muted-button">Cadastrar</button>
                     </div>
-
+                </div>
             </div>
-
-                <div class="card card-product flex-v">
-                    <a href="">
-                    <div class="card-product__image">
-                         <img src="images/icone-ideia.svg" alt="Lâmpada de Ideias e Caixas de Produtos" class="responsive-image icon-image">
-                     </div>
-                        <div class="card-product__content">
+            
+            <div class="card card-tall">
+                    <div class="card-content">
+                        <div class="card-content-image flex-v margin-bottom">
+                            <img src="images/icone-ideia.svg" alt="" class="icon-image">
+                        </div>
+                        <div class="card-content">
                             <h5 class="card-content-title no-margin-top">Desenvolvimento de Produtos</h5>
                             <p class="card-content-text" style="
                             margin-bottom: 6.2rem;">Design de Produtos Assistivos em parceria 
                                 com empresas.</p>
                             <button class="card-content-button muted-button">Saiba Mais</button>
                         </div>
-                    </a>
+                    </div>
                 </div>
         </div>
     </section>
@@ -100,19 +116,19 @@
         
             <div class="partner-container w-75 mx-auto"> 
                 <a href="" class="partner-icon-box">
-                    <img src="images/alianca-empreendedora.jpg" alt="Parceiro" class="responsive-image partner-icon" alt="Aliança Empreendedora">
+                    <img src="images/alianca-empreendedora.jpg" class="partner-icon" alt="Aliança Empreendedora">
                 </a>
                 <a href="" class="partner-icon-box">
-                    <img src="images/shell-ij.jpg" alt="Parceiro" class="responsive-image partner-icon" alt="Shell Iniciativa Jovem">
+                    <img src="images/shell-ij.jpg" class="partner-icon" alt="Shell Iniciativa Jovem">
                 </a>
                 <a href="" class="partner-icon-box">
-                    <img src="images/esdi.jpg" alt="Parceiro" class="responsive-image partner-icon" alt="Incubadora de Empresas da Escola Superior de Desenho Industrial">
+                    <img src="images/esdi.jpg" class="partner-icon" alt="Incubadora de Empresas da Escola Superior de Desenho Industrial">
                 </a>
                 <a href="" class="partner-icon-box">
-                    <img src="images/faperj.jpg" alt="Parceiro" class="responsive-image partner-icon" alt="Fundação Carlos Chagas Filho de Amparo a Pesquisa do Estado do Rio de Janeiro">
+                    <img src="images/faperj.jpg" class="partner-icon" alt="Fundação Carlos Chagas Filho de Amparo a Pesquisa do Estado do Rio de Janeiro">
                 </a>
                 <a href="" class="partner-icon-box">
-                    <img src="images/pense-grande.jpg" alt="Parceiro" class="responsive-image partner-icon" alt="Pense Grande">
+                    <img src="images/pense-grande.jpg" class="partner-icon" alt="Pense Grande">
                 </a>
             </div>
         </div>
@@ -127,7 +143,7 @@
                     <button class="accent-button flex-large mt-3 w-100">Quero conhecer</button>
                 </div>
                 <div class="flex-item--1 illustration">
-                    <img class="landing-image-lg" src="images/landing.svg" alt="Ilustração de Lorem Ipsum">
+                    <img class="landing-image-lg" src="images/landing.svg" alt="">
                 </div>
     </div>
 </section>
@@ -144,7 +160,7 @@
                 <img class="social-icon" src="images/instagram.svg" alt="Instagram da Mob">
             </a>
             <a href="https://www.facebook.com/mobdesignassistivo/">
-                <img class="social-icon" src="images/facebook.svg" alt="Instagram da Mob">
+                <img class="social-icon" src="images/facebook.svg" alt="Facebook da Mob">
             </a>
         </div>
         

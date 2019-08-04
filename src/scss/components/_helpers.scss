@@ -173,15 +173,6 @@
     overflow: hidden;
 }
 
-// Animation //
-.ani-grow { 
-    transition: all .3s ease-in-out; 
-
-    &:hover { 
-        transform: scale(1.05); 
-    }
-}
-
 // Flex //
 
 .flex-row-reverse {
@@ -189,3 +180,22 @@
     flex-direction: row-reverse;
 }
 
+.flex-item--flex-1 {
+    flex: 1;
+}
+
+.flex-item--flex-2 {
+    flex: 2;
+}
+
+.flex-item--flex-3 {
+    flex: 3;
+}
+
+.flex-item--flex-4 {
+    flex: 4;
+}
+
+.flex-item--flex-5 {
+    flex: 5;
+}

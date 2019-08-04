@@ -123,7 +123,7 @@ $round-buttons: 40px;
 
 $forms: ('[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
 $buttons: ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
-$input-background: transparent;
+$input-background: #fafafa;
 $placeholder: darken($font-color, 20%);
 $form-border: 1px solid $border-color;
 $form-border-hover: 1px solid darken($border-color, 10%);

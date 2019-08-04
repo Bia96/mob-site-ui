@@ -10,16 +10,6 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="images/favicon.png">
 
-    <script>
-    
-        function randombg(){
-            var random= Math.floor((Math.random() * 3));
-            var bigSize = ["url('images/bg-03.png'), url('images/bg-01.png'), url('images/bg-02.png')"];
-            document.getElementById("random").style.backgroundImage = bigSize[random];
-            console.log(bigSize)
-            console.log(random)
-          }
-        </script>
 </head>
 
 <body onload="randombg()">
@@ -40,8 +30,8 @@
                 <div class="section-container container-hero flex-row">
                     <div class="text-container flex-column">
                         <h1 class="">Olá, somos a Mob.</h1>
-                        <p>Se você tem um produto que atenda pessoas com deficiência, mobilidade reduzida ou idosos e 
-                        precisa da conexão com a indústria, venha mobilizar conosco!</p>
+                        <p>Você trabalha com produtos que atendam pessoas com deficiência, mobilidade reduzida ou idosos?
+                             Nós te ajudamos a se conectar com  a Indústria, venha mobilizar com a gente</p>
                         <form class="flex-v" name="Saber Mais" aria-label="Quero Saber Mais" netlify>
                             <label class="flex-small" for="Seu Email">Email
                                  <input type="email" id="Seu Email">
@@ -55,8 +45,8 @@
     <section class="product-cards" aria-label="Nossos Pilares">
         <div class="section-container margin-top">
             <h1 class="text-center">O que fazemos</h1>
-            <p class="text-center margin-bottom">Atualmente, a Mob tem investido seus esforços em 3 pilares, 
-                com o intuito de fomentar as discussões a respeito da Acessibilidade e Inclusão.</p>
+            <p class="text-center margin-bottom">Atualmente, a Mob investe em três pilares,
+                 buscando aumentar a discussão sobre acessibilidade e inclusão na sociedade.</p>
             <div class="cards-container margin-top margin-bottom">
 
                 <div class="card card-product flex-v">
@@ -66,8 +56,8 @@
                         </div>
                         <div class="card-product__content">
                             <h5 class="card-content-title no-margin-top">Workshops e Oficinas</h5>
-                            <p class="card-content-text">Projetos sobre Desenho Universal, Design Inclusivo e Acessibilidade para Empresas e Universidades. Afim de difundir os conceitos e facilitar a 
-                                aplicação em produtos e tornar a Indústria um local de produções mais inclusivas.</p>
+                            <p class="card-content-text">Aprenda sobre como aplicar os princípios do Design Universal, 
+                                Design Inclusivo e Acessibilidade em seus projetos.</p>
                             <button class="card-content-button muted-button">Entrar em Contato</button>
                         </div>
                     </a>
@@ -80,8 +70,8 @@
                     </div>
                     <div class="card-product__content">
                         <h5 class="card-content-title no-margin-top">Conexão Inventor/Indústria</h5>
-                        <p class="card-content-text">Para inventores individuais com produtos de Tecnologia Assistiva, oferecemos a conexão com a Indústria, além de consultorias 
-                            sobre o que é necessário para adquirir seus primeiros investidores ou escoar o produto para o mercado.</p>
+                        <p class="card-content-text">Possui algum produto de Tecnologia Assistiva? Nós oferecemos conexão com a Indústria e consultoria. 
+                            Descubra o que é necessário para lançar seu produto no mercado.</p>
                         <button onclick="window.location.href = 'https://forms.gle/Nejfww5qaj2pbZM96';" class="card-content-button muted-button">Cadastrar</button>
                     </div>
 
@@ -95,8 +85,8 @@
                         <div class="card-product__content">
                             <h5 class="card-content-title no-margin-top">Desenvolvimento de Produtos</h5>
                             <p class="card-content-text" style="
-                            margin-bottom: 6.2rem;">Design de Produtos Asistivos em parceria 
-                                com empresas e no futuro, uma loja virtual para comercialização e produtos open source.</p>
+                            margin-bottom: 6.2rem;">Design de Produtos Assistivos em parceria 
+                                com empresas.</p>
                             <button class="card-content-button muted-button">Saiba Mais</button>
                         </div>
                     </a>
@@ -161,5 +151,16 @@
     </div>
 </footer>
 </body>
+
+<script>
+    
+    function randombg(){
+        var random= Math.floor((Math.random() * 3));
+        var bigSize = ["url('images/bg-03.png'), url('images/bg-01.png'), url('images/bg-02.png')"];
+        document.getElementById("random").style.backgroundImage = bigSize[random];
+        console.log(bigSize)
+        console.log(random)
+      }
+    </script>
 
 </html>

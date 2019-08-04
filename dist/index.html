@@ -49,8 +49,8 @@
                 <div class="section-container container-hero flex-row">
                     <div class="text-container flex-column">
                         <h1 class="">Olá, somos a Mob.</h1>
-                        <p>Você trabalha com produtos que atendam pessoas com deficiência, mobilidade reduzida ou idosos?
-                             Nós te ajudamos a se conectar com  a Indústria, venha mobilizar com a gente</p>
+                        <p>Você trabalha com produtos que atendam pessoas com deficiencia, mobilidade reduzida ou idosos? 
+                            Nós te ajudamos a se conectar com  a Indústria, venha mobilizar com a gente!</p>
                         <form class="flex-v" name="Saber Mais" aria-label="Quero Saber Mais" netlify>
                             <label class="flex-small" for="Seu Email">Email
                                  <input type="email" id="Seu Email">
@@ -64,8 +64,9 @@
     <section class="product-cards" aria-label="Nossos Pilares">
         <div class="section-container margin-top">
             <h1 class="text-center">O que fazemos</h1>
-            <p class="text-center margin-bottom">Atualmente, a Mob investe em três pilares,
-                 buscando aumentar a discussão sobre acessibilidade e inclusão na sociedade.</p>
+            <p class="text-center margin-bottom">Atualmente, a Mob tem investido seus esforços em três pilares, 
+                com o intuito de fomentar a discussão a respeito da Acessibilidade e Inclusão na sociedade.</p>
+
             <div class="cards-container margin-top margin-bottom">
                 <div class="card card-tall">
                         <div class="card-content-image flex-v margin-bottom">
@@ -73,9 +74,11 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-content-title no-margin-top">Workshops e Oficinas</h5>
-                            <p class="card-content-text">Aprenda sobre como aplicar os princípios do Design Universal, 
-                                Design Inclusivo e Acessibilidade em seus projetos.</p>
-                            <button class="card-content-button muted-button">Entrar em Contato</button>
+                            <p class="card-content-text">Aprenda sobre como aplicar os princípios do Design Universal,
+                                 Design Inclusivo e acessibilidade em seus projetos.</p>
+                            <div class="card-content-footer">
+                                <button class="card-content-button muted-button">Entrar em Contato</button>
+                            </div>
                         </div>
                 </div>
 
@@ -86,9 +89,11 @@
                     </div>
                     <div class="card-content">
                         <h5 class="card-content-title no-margin-top">Conexão Inventor/Indústria</h5>
-                        <p class="card-content-text">Possui algum produto de Tecnologia Assistiva? Nós oferecemos conexão com a Indústria e consultoria. 
+                        <p class="card-content-text">Possui algum produto de Tecnologia Assistiva? Nós oferecemos conexão com a Indústria e consultorias. 
                             Descubra o que é necessário para lançar seu produto no mercado.</p>
-                        <button onclick="window.location.href = 'https://forms.gle/Nejfww5qaj2pbZM96';" class="card-content-button muted-button">Cadastrar</button>
+                        <div class="card-content-footer">
+                            <button onclick="window.location.href ='https://forms.gle/Nejfww5qaj2pbZM96';" class="card-content-button muted-button">Cadastrar</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,10 +105,11 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-content-title no-margin-top">Desenvolvimento de Produtos</h5>
-                            <p class="card-content-text" style="
-                            margin-bottom: 6.2rem;">Design de Produtos Assistivos em parceria 
-                                com empresas.</p>
-                            <button class="card-content-button muted-button">Saiba Mais</button>
+                            <p class="card-content-text">Design e fabricação de Produtos Asistivos em parceria 
+                            com empresas especializadas.</p>
+                            <div class="card-content-footer">
+                                <button class="card-content-button muted-button">Saiba Mais</button>
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -167,16 +173,5 @@
     </div>
 </footer>
 </body>
-
-<script>
-    
-    function randombg(){
-        var random= Math.floor((Math.random() * 3));
-        var bigSize = ["url('images/bg-03.png'), url('images/bg-01.png'), url('images/bg-02.png')"];
-        document.getElementById("random").style.backgroundImage = bigSize[random];
-        console.log(bigSize)
-        console.log(random)
-      }
-    </script>
 
 </html>

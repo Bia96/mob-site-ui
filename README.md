@@ -14,7 +14,7 @@ Por isso, você precisa instalar o Sass na sua máquina para que ele possa funci
 
 Para instalar o SASS, basta baixá-lo e checar no Terminal se está instalado e atualizado usando ``sass --version``. [Informação adicional sobre a instalação do SASS](https://sass-lang.com/install).
 
-É importante saber que **todas as edições de estilos CSS** devem acontecer nos respectivos arquivos `.sass` (localizados na pasta `\mob-site-ui\src\scss`) e, ao salvar, são automaticamente transcritas pelo compilador para o arquivo `C:\Users\s-bea\Documents\GitHub\mob-site-ui\dist\css\main.min.css`. 
+É importante saber que **todas as edições de estilos CSS** devem acontecer nos respectivos arquivos `.sass` (localizados na pasta `\mob-site-ui\src\scss`) e, ao salvar, são automaticamente transcritas pelo compilador para o arquivo `mob-site-ui\dist\css\main.min.css`. 
 
 # Baixando o projeto do GitHub e conectando seu usuário
 

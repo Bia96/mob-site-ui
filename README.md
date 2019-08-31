@@ -1,4 +1,4 @@
-Mob Website UI
+
 
 # Instalando Node e npm
 Para rodar o projeto localmente, você precisará instalar o [Nodejs](https://nodejs.org/en/download/) e o npm, que são responsáveis por administrar os pacotes necessários para o projeto. Ao instalar o Node, automaticamente o npm também é instalado. 

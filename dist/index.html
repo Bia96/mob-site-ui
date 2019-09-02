@@ -7,7 +7,6 @@
 
     <title>Mob Design Assistivo</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css"> 
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -36,9 +35,17 @@
     <meta property="og:image:width" content="800"> 
     <meta property="og:image:height" content="600"> 
     <meta property="og:type" content="website">
+
+    <script>
+        function randombg(){
+            var random= Math.floor((Math.random() * 3));
+            var bigSize = ["url('images/time-mob-Shell-Iniciativa-Jovem.png')", "url('images/Trabalhador-Industria-Solda.jpg')", "url('images/Garota-Cadeirante-Praticando-Esportes.png')"];
+            document.getElementById("random").style.backgroundImage = bigSize[random];
+          }
+    </script>
 </head>
 
-<body>
+<body onload="randombg()">
     <nav class="navbar">
         <div class="container navbar-container">
             <div class="inline-block float-left mt-3">
@@ -52,35 +59,21 @@
         </div>
     </nav>
 
-    <div id="carouselExampleIndicators" class="carousel slide bg-image w-100" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('images/time-mob-Shell-Iniciativa-Jovem.png')">
-          </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('images/Trabalhador-Industria-Solda.jpg')">
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('images/Garota-Cadeirante-Praticando-Esportes.png')">
-          </div>
-        </div>
-    </div>
-
     <section class="landing" aria-label="Olá, somos a Mob">
-        <!-- <div class="w-100 bg-image" id="random" alt=""></div> --> 
-        <div class="img-overlay"></div>
-            <div class="section-container container-hero flex-row">
-                <div class="text-container flex-column">
-                    <h1 class="">Olá, somos a Mob.</h1>
-                    <p>Você trabalha com produtos que atendam pessoas com deficiencia, mobilidade reduzida ou idosos? 
-                        Nós te ajudamos a se conectar com  a Indústria, venha mobilizar com a gente!</p>
-                    <form class="flex-v" name="saber-mais" aria-label="Quero Saber Mais" data-netlify="true" method="POST">
-                        <label class="flex-small" for="email">Email
-                             <input type="email" name="email">
-                        </label>
-                        <button type="submit" class="flex-large mt-3 w-100">Quero saber mais</button>
-                    </form>
-                </div>
+            <div class="w-100 bg-image" id="random" alt=""></div>
+            <div class="img-overlay"></div>
+                <div class="section-container container-hero flex-row">
+                    <div class="text-container flex-column">
+                        <h1 class="">Olá, somos a Mob.</h1>
+                        <p>Você trabalha com produtos que atendam pessoas com deficiencia, mobilidade reduzida ou idosos? 
+                            Nós te ajudamos a se conectar com  a Indústria, venha mobilizar com a gente!</p>
+                        <form class="flex-v" name="saber-mais" aria-label="Quero Saber Mais" data-netlify="true" method="POST">
+                            <label class="flex-small" for="email">Email
+                                 <input type="email" name="email">
+                            </label>
+                            <button type="submit" class="flex-large mt-3 w-100">Quero saber mais</button>
+                        </form>
+                    </div>
         </div>
     </section>
 
@@ -92,17 +85,17 @@
 
             <div class="cards-container margin-top margin-bottom">
                 <div class="card card-tall">
-                    <div class="card-content-image flex-v margin-bottom">
-                        <img src="images/icone-conhecimento.svg" alt="" class="icon-image">
-                    </div>
-                    <div class="card-content">
-                        <h5 class="card-content-title no-margin-top">Workshops e Palestras</h5>
-                        <p class="card-content-text">Aprenda sobre como aplicar os princípios do Design Universal,
-                             Design Inclusivo e acessibilidade em seus projetos.</p>
-                        <div class="card-content-footer">
-                            <button onclick="window.location.href ='https://forms.gle/g9UCWVNa3YbytG5a6';" class="card-content-button muted-button">Entrar em Contato</button>
+                        <div class="card-content-image flex-v margin-bottom">
+                            <img src="images/icone-conhecimento.svg" alt="" class="icon-image">
                         </div>
-                    </div>
+                        <div class="card-content">
+                            <h5 class="card-content-title no-margin-top">Workshops e Palestras</h5>
+                            <p class="card-content-text">Aprenda sobre como aplicar os princípios do Design Universal,
+                                 Design Inclusivo e acessibilidade em seus projetos.</p>
+                            <div class="card-content-footer">
+                                <button onclick="window.location.href ='https://forms.gle/g9UCWVNa3YbytG5a6';" class="card-content-button muted-button">Entrar em Contato</button>
+                            </div>
+                        </div>
                 </div>
 
             <div class="card card-tall">
@@ -144,24 +137,21 @@
             <h1 class="text-center">Quem Confia</h1>
         
             <div class="partner-container w-75 mx-auto"> 
-                <a href="http://fundacaotelefonica.org.br/projetos/pense-grande/" class="partner-icon-box">
-                    <img src="images/fundacao-telefonica-vivo.png" class="partner-icon" alt="Fundação Telefônica/Vivo">
-                </a>
                 <a href="https://aliancaempreendedora.org.br/" class="partner-icon-box">
-                    <img src="images/alianca-empreendedora.png" class="partner-icon" target="_blank" alt="Aliança Empreendedora">
-                </a>
-                <a href="http://fundacaotelefonica.org.br/projetos/pense-grande/" class="partner-icon-box">
-                    <img src="images/pense-grande.png" class="partner-icon" alt="Pense Grande">
-                </a>
-                <a href="http://www.faperj.br/" class="partner-icon-box">
-                    <img src="images/faperj.png" class="partner-icon" alt="Fundação Carlos Chagas Filho de Amparo a Pesquisa do Estado do Rio de Janeiro">
-                </a>
-                <a href="http://www.esdi.uerj.br/incubadora" class="partner-icon-box">
-                    <img src="images/esdi.png" class="partner-icon" alt="Incubadora de Empresas da Escola Superior de Desenho Industrial">
+                    <img src="images/alianca-empreendedora.jpg" class="partner-icon" alt="Aliança Empreendedora">
                 </a>
                 <a href="https://www.iniciativajovem.org.br/" class="partner-icon-box">
-                    <img src="images/shell-ij.png" class="partner-icon" alt="Shell Iniciativa Jovem">
-                </a> 
+                    <img src="images/shell-ij.jpg" class="partner-icon" alt="Shell Iniciativa Jovem">
+                </a>
+                <a href="http://www.esdi.uerj.br/incubadora" class="partner-icon-box">
+                    <img src="images/esdi.jpg" class="partner-icon" alt="Incubadora de Empresas da Escola Superior de Desenho Industrial">
+                </a>
+                <a href="http://www.faperj.br/" class="partner-icon-box">
+                    <img src="images/faperj.jpg" class="partner-icon" alt="Fundação Carlos Chagas Filho de Amparo a Pesquisa do Estado do Rio de Janeiro">
+                </a>
+                <a href="http://fundacaotelefonica.org.br/projetos/pense-grande/" class="partner-icon-box">
+                    <img src="images/pense-grande.jpg" class="partner-icon" alt="Pense Grande">
+                </a>
             </div>
         </div>
     </section>
@@ -198,10 +188,6 @@
         
     </div>
 </footer>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

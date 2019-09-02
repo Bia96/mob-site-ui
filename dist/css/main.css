@@ -49,6 +49,16 @@
   transition: 0.3s ease-in;
 }
 
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center 10% center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 @media (min-width: 800px) {
   .bg-image {
     max-height: none;
@@ -248,7 +258,7 @@ img.landing-image-lg {
 
 footer {
   background-color: #073066;
-  height: 30vh;
+  height: 20vh;
   width: 100%;
   position: relative;
   justify-content: space-between;
@@ -443,7 +453,7 @@ h3,
 h4,
 h5 {
   margin: 1.5rem 0;
-  font-weight: normal;
+  font-weight: bold;
   font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.2;
   color: #334052;

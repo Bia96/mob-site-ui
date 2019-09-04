@@ -49,6 +49,12 @@
   transition: 0.3s ease-in;
 }
 
+@media (min-width: 800px) {
+  .bg-image {
+    max-height: none;
+  }
+}
+
 .carousel-item {
   height: 100vh;
   min-height: 350px;
@@ -57,12 +63,6 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-@media (min-width: 800px) {
-  .bg-image {
-    max-height: none;
-  }
 }
 
 #random {
@@ -90,8 +90,8 @@
 }
 
 .section-container {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-bottom: 8rem;
 }
 
@@ -213,25 +213,25 @@ img.landing-image-lg {
 
 .partner-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 @media (min-width: 800px) {
   .partner-container {
-    flex-direction: row;
-    margin-bottom: 0px;
-    flex-wrap: wrap;
-    justify-content: center;
     width: 100%;
   }
 }
 
 .partner-container .partner-icon-box {
   overflow: hidden;
-  padding: 24px;
-  width: 200px;
-  height: 200px;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;

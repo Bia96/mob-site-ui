@@ -1151,6 +1151,27 @@ hr {
   width: 50%;
 }
 
+@media (min-width: 320px) {
+  #productCards {
+    margin-bottom: 4rem;
+  }
+
+  #partnersContainer {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 800px) {
+  #productCards {
+    margin-bottom: 8rem;
+  }
+
+  #partnersContainer {
+    margin-bottom: 8rem;
+  }
+}
+
+
 .tile-base, .card {
   background-color: #fff;
   border-radius: 14px;

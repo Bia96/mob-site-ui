@@ -16,7 +16,7 @@
     "css framework"
   ],
   "dependencies": {
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "npm": "^6.11.2"
   },
   "scripts": {
